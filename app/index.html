@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="
+    Сучасний косметичний салон у місті Зіньків, що пропонує догляд за шкірою за допомогою передової косметології, використовуючи сучасний лазерний апарат, з можливістю онлайн-бронювання - для тих, хто цінує красу">
+    <meta name="keywords"
+        content="косметичний салон, догляд за шкірою, косметологія, якісні матеріали, професійний майстер, бронювання, краса, Зіньків">
+
+    <!-- Facebook tags-->
+    <meta property="og:title" content="ElosLaser | Професійна косметологія" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description"
+        content="Сучасний косметичний салон у місті Зіньків, що пропонує догляд за шкірою за допомогою передової лазерної терапії" />
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:url" content="https://eloslaser.com" />
+    <meta property="og:image" content="images/screen.png" />
+
+    <!-- Fav Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>ElosLaser Studio</title>
+
+    <!-- Preload -->
+    <link rel="preload" href="images/light.webp" as="image">
+    <link rel="preload" href="fonts/MonumentExtended-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="css/libs.min.css" as="style">
+    <link rel="preload" href="css/main.min.css" as="style">
+    <link rel="preload" href="js/main.min.js" as="script">
+
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="js/circular-revealer.js"></script>
+
+    <!-- Critical Stytes  -->
+    <style>
+        :root {
+            --white: #fff;
+            --black: #000;
+            --second-bg: #EBF3F5;
+            --green: #51da4c
+        }
+
+        @font-face {
+            font-family: "MonumentExtended";
+            src: url("fonts/MonumentExtended-Regular.woff2") format("woff2");
+            font-weight: 400;
+            font-display: swap;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: "e-Ukraine";
+            src: url("fonts/e-Ukraine-Light.woff2") format("woff2");
+            font-weight: 300;
+            font-display: swap;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: "e-Ukraine";
+            src: url("fonts/e-Ukraine-Regular.woff2") format("woff2");
+            font-weight: 400;
+            font-display: swap;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: "e-Ukraine";
+            src: url("fonts/e-Ukraine-Bold.woff2") format("woff2");
+            font-weight: 700;
+            font-display: swap;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: "e-Ukraine-t";
+            src: url("fonts/e-UkraineHead-Light.woff2") format("woff2");
+            font-weight: 300;
+            font-display: swap;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: "e-Ukraine-t";
+            src: url("fonts/e-UkraineHead-Regular.woff2") format("woff2");
+            font-weight: 400;
+            font-display: swap;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: "e-Ukraine-t";
+            src: url("fonts/e-UkraineHead-Bold.woff2") format("woff2");
+            font-weight: 700;
+            font-display: swap;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: "e-Ukraine-t-logo";
+            src: url("fonts/e-UkraineHead-LOGO.woff2") format("woff2");
+            font-weight: 700;
+            font-display: swap;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: "Mitera";
+            src: url("fonts/Mitera-Regular.woff2") format("woff2");
+            font-weight: 400;
+            font-display: swap;
+            font-style: normal
+        }
+
+        html {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            scroll-behavior: smooth
+        }
+
+        *,
+        *::before,
+        *::after {
+            -webkit-box-sizing: inherit;
+            box-sizing: inherit
+        }
+
+        body {
+            font-family: "e-Ukraine", sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 300;
+            color: var(--white);
+            margin: 0;
+            min-width: 320px
+        }
+
+        img {
+            max-width: 100%;
+            height: auto
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit
+        }
+
+        ul,
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        p {
+            margin: 0
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            font-size: inherit
+        }
+
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+            padding: 0 15px
+        }
+
+        .disable-scroll {
+            overflow-y: hidden
+        }
+
+        .is-outer {
+            position: relative !important;
+            left: -9999px !important
+        }
+
+        .site-container {
+            overflow: hidden
+        }
+
+        .for-mobile {
+            display: none
+        }
+
+        .error {
+            border: 2px #ff4019 solid !important
+        }
+
+        .btn-reset {
+            border: none;
+            background: rgba(0, 0, 0, 0);
+            cursor: pointer
+        }
+
+        .js-focus-visible :focus:not(.focus-visible) {
+            outline: none
+        }
+
+        .header {
+            width: 100%;
+            height: 100vh;
+            background-color: var(--black);
+            background-image: url("images/light.webp");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative
+        }
+
+        .header__button {
+            z-index: 10;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: var(--white);
+            border: 0;
+            cursor: pointer;
+            position: fixed;
+            top: 40px;
+            right: 40px;
+            outline: none;
+            -webkit-animation-duration: 300ms;
+            animation-duration: 300ms;
+            -webkit-animation-timing-function: ease;
+            animation-timing-function: ease
+        }
+
+        .header__button[data-open=true] {
+            background-color: #000;
+            -webkit-animation-name: scale;
+            animation-name: scale
+        }
+
+        .header__button[data-open=false] {
+            -webkit-transition: background-color 250ms linear;
+            -o-transition: background-color 250ms linear;
+            transition: background-color 250ms linear
+        }
+
+        @-webkit-keyframes scale {
+            from {
+                -webkit-transform: scale(0);
+                transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @keyframes scale {
+            from {
+                -webkit-transform: scale(0);
+                transform: scale(0)
+            }
+
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        .header__nav {
+            background-color: var(--white);
+            position: fixed;
+            overflow: hidden;
+            z-index: 9;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            visibility: hidden;
+            -webkit-clip-path: circle(var(--radius) at calc(100% - 55px) 47px);
+            clip-path: circle(var(--radius) at calc(100% - 55px) 47px)
+        }
+
+        .header__nav-title {
+            color: var(--black);
+            padding: 45px 0 0 25px;
+            font-size: 24px
+        }
+
+        .header__nav-wrapper {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            color: var(--black);
+            -webkit-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        .header__nav-inner {
+            width: 50%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            gap: 25px;
+            padding: 0 15px
+        }
+
+        .header__nav-link {
+            color: var(--black)
+        }
+
+        .header__nav-left {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center
+        }
+
+        .header__nav-menu {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between
+        }
+
+        .header__nav[data-active=true] {
+            visibility: visible
+        }
+
+        .header__menu {
+            padding: 0;
+            margin: 0
+        }
+
+        .header__menu-item {
+            color: var(--black);
+            font-size: 2.9166666667vw;
+            line-height: 3.125vw
+        }
+
+        .header__logo {
+            -webkit-filter: invert(1);
+            filter: invert(1)
+        }
+
+        .header__title {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            font-family: "MonumentExtended";
+            font-size: 40px;
+            letter-spacing: 3px;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%)
+        }
+
+        .header__title-span {
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            -webkit-text-stroke: 1px var(--white);
+            color: rgba(0, 0, 0, 0)
+        }
+
+        .header__socials {
+            position: absolute;
+            right: -150px;
+            top: 50%;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
+
+        .header__socials-item {
+            display: inline-block;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, .7);
+            font-family: "MonumentExtended";
+            font-size: 10px;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-right: 40px
+        }
+
+        @media(max-width: 1025px) {
+            .services__items {
+                grid-template-columns: repeat(2, 1fr)
+            }
+        }
+
+        @media(max-width: 991.98px) {
+            .header__nav {
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: reverse;
+                -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse
+            }
+
+            .header__menu-item {
+                font-size: 13px
+            }
+
+            .header__nav-inner {
+                width: 90%;
+                gap: 10px
+            }
+
+            .header__nav-logo {
+                width: 150px;
+                height: 150px
+            }
+
+            .header__nav-right {
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start
+            }
+
+            .about__description {
+                font-size: 20px;
+                line-height: 24px;
+                gap: 10px
+            }
+
+            .footer__socials-items {
+                grid-template-columns: 1fr
+            }
+
+            .footer__socials-mail {
+                border-left: 1px solid var(--white);
+                border-right: 0
+            }
+
+            .footer__socials-items>:not(:last-child) {
+                border-right: none;
+                border-left: 1px solid var(--white);
+            }
+
+            .footer__socials-items>:nth-child(2) {
+                border-right: 1px solid var(--white)
+            }
+
+            .footer__socials-number {
+                border-right: 1px solid var(--white)
+            }
+        }
+
+        @media(max-width: 768px) {
+            .banner {
+                font-size: 8px;
+                padding: 0;
+            }
+
+            .about__container {
+                grid-template-columns: 1fr
+            }
+
+            .map__wrapper {
+                grid-template-columns: 1fr
+            }
+
+            .map__content {
+                height: 500px
+            }
+        }
+
+        @media(max-width: 639.98px) {
+            .header__button {
+                right: 25px
+            }
+
+            .header__title {
+                font-size: 32px
+            }
+
+            .header__nav-title {
+                font-size: 22px
+            }
+
+            .header__socials {
+                top: 85%;
+                right: 0;
+                left: 0;
+                -webkit-transform: none;
+                -ms-transform: none;
+                transform: none
+            }
+
+            .header__socials-items {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                padding: 0 10px
+            }
+
+            .header__socials-item {
+                font-size: 8px;
+                margin-right: 0
+            }
+
+            .services__items {
+                grid-template-columns: 1fr
+            }
+
+            .awards__items {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
+            }
+
+            .awards__item-picture {
+                max-width: none;
+                width: 100%;
+                height: auto
+            }
+
+            .awards__title::after {
+                left: 0
+            }
+
+            .price__items {
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
+            }
+
+            .price__title {
+                margin-bottom: 75px
+            }
+
+            .price__title::after {
+                left: 24%
+            }
+
+            .about {
+                padding-bottom: 3px
+            }
+
+            .about__description {
+                font-size: 18px;
+                line-height: 22px;
+                padding-top: 30px
+            }
+
+            .footer__time-wrapper {
+                font-size: 14px
+            }
+
+            .footer__time-active {
+                padding-left: 10px
+            }
+
+            .footer__time-active--2 {
+                padding-left: 15px
+            }
+
+            .footer__socials-mail {
+                font-size: 14px
+            }
+
+            .footer__socials-number {
+                font-size: 14px
+            }
+
+            .footer__nav-menu {
+                font-size: 14px;
+                gap: 7px
+            }
+
+            .footer__creator {
+                font-size: 15px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        Знижка 25% на першу комплексну терапію в честь відкриття!
+    </div>
+    <header class="header" id="header">
+        <button class="header__button nav-btn-js" aria-label="burger-button">
+        </button>
+
+        <nav class="header__nav nav-js" data-active="false">
+            <p class="header__nav-title">ElosLaser Studio</p>
+            <div class="header__nav-wrapper">
+                <div class="header__nav-inner">
+                    <div class="header__nav-left">
+                        <!-- <img class="header__nav-logo" src="images/logo.webp" width="150" height="150"
+                            alt="Be Beautiful Studio Logo"> -->
+                        <ul class="header__nav-socials">
+                            <li>
+                                <a class="header__nav-link" href="https://www.facebook.com/share/18BJLYdm22/"
+                                    target="_blank">Facebook</a>
+                            </li>
+                            <li>
+                                <a class="header__nav-link" href="https://www.instagram.com/verbinskaiaolga/"
+                                    target="_blank">Instagram</a>
+                            </li>
+                            <li>
+                                <a class="header__nav-link" href="https://t.me/eloslaser" target="_blank">Telegram</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="header__nav-right header__nav-menu">
+                        <li class="header__menu-item"><a href="#header">Головна</a></li>
+                        <li class="header__menu-item"><a href="#services">Послуги</a></li>
+                        <li class="header__menu-item"><a href="#awards">Сертифікати</a></li>
+                        <!-- <li class="header__menu-item"><a href="#feed">Наша робота</a></li> -->
+                        <li class="header__menu-item"><a href="#price">Ціни</a></li>
+                        <li class="header__menu-item"><a href="#map">Мапа</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- <img class="header__logo" src="images/logo.webp" width="100" height="100" alt="KoliadaStudio logo"> -->
+        <!-- <a href="/" class="header__name">ElosLaser</a> -->
+        <h1 class="header__title">ElosLaser<span class="header__title-span">Studio</span></h1>
+        <div class="header__socials">
+            <ul class="header__socials-items">
+                <li class="header__socials-item">
+                    <a class="header__socials-link" href="https://www.facebook.com/share/18BJLYdm22/"
+                        target="_blank">Facebook</a>
+                </li>
+                <li class="header__socials-item">
+                    <a class="header__socials-link" href="https://www.instagram.com/verbinskaiaolga/"
+                        target="_blank">Instagram</a>
+                </li>
+                <li class="header__socials-item">
+                    <a class="header__socials-link" href="https://t.me/eloslaser" target="_blank">Telegram</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="content">
+        <section class="about" id="about">
+            <div class="about__container">
+                <div class="about__wrapper">
+                    <p class="about__description">
+                        Платформа Elos — портативна ELOS система для виконання різнопланових косметологічних завдань.
+                        Широкий спектр ELOS процедур:
+                        <br>
+                        <br>
+                         — епіляція волосся будь-якого типу і кольору (темне, світле, руде, пушкове);
+                        <br>
+                         — омолодження шкіри обличчя, шиї, зони декольте, живота та інших частин тіла (ефект, як від
+                        біоревіталізації або пілінгу);
+                        <br>
+                         — підтяжка контурів обличчя (ліфтинг + ефект ліполізу);
+                        <br>
+                         — підтяжка шкіри живота, декольте, сідниць, зони колін, рук та кистей (ліфтинг + ефект
+                        ліполізу);
+                        <br>
+                         — корекція епідермальної пігментації;
+                        <br>
+                         — корекція зморшок (зменшення носогубних складок, «гусячих лапок» навколо очей).
+                    </p>
+                </div>
+                <div class="about__img-inner">
+                    <img class="about__img" src="images/aparat.jpg" width="960" height="726" alt="interior">
+                </div>
+
+            </div>
+
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <h2 class="services__title">Послуги</h2>
+            </div>
+            <div class="services__items services__items--1">
+                <div class="services__item services__item--1">
+                    <div class="services__item-wrapper">
+                        <img class="services__item-img"
+                            src="images/chystka-oblychchya-2.webp"
+                            loading="lazy" alt="">
+                        <div class="services__img-overlay"></div>
+                        <div class="services__item-copy">
+                            <h3 class="services__item-name">
+                                Омоложення
+                            </h3>
+                            <p class="services__item-number">1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__item services__item--2">
+                    <div class="services__item-wrapper">
+                        <img class="services__item-img" src="images/BIG--1518304559.jpg" style="object-fit: unset;"
+                            loading="lazy" alt="">
+                        <div class="services__img-overlay"></div>
+                        <div class="services__item-copy">
+                            <h3 class="services__item-name">
+                                Корекція епідермальної пігментації
+                            </h3>
+                            <p class="services__item-number">2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__item services__item--3">
+                    <div class="services__item-wrapper">
+                        <img class="services__item-img" src="images/laser.jpg"
+                            loading="lazy" alt="">
+                        <div class="services__img-overlay"></div>
+                        <div class="services__item-copy">
+                            <h3 class="services__item-name">
+                                Епіляція
+                            </h3>
+                            <p class="services__item-number">3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="awards" id="awards">
+            <div class="awards__container">
+                <h2 class="awards__title">Сертифікати</h2>
+                <div class="awards__items">
+                    <div class="awards__item">
+                        <div class="awards__item-wrapper">
+                            <div class="awards__item-top">
+                                <img class="awards__item-img" src="images/cup.svg" width="32" height="32"
+                                    alt="awards-cup">
+                            </div>
+                            <div class="awards__item-center">
+                                <p class="awards__item-title">Диплом</p>
+                                <p class="awards__item-name">Медична освіта</p>
+                            </div>
+                            <div class="awards__item-bottom">
+                                <dialog class="awards__item-dialog">
+                                    <button class="awards__item-button--close" type="reset">✖</button>
+                                    <img class="awards__item-picture" src="images/awards/diplom.jpg" alt="award-img">
+                                </dialog>
+                                <button class="awards__item-button">Переглянути <span
+                                        class="awards__item-arrow">➜</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="awards__item">
+                        <div class="awards__item-wrapper">
+                            <div class="awards__item-top">
+                                <img class="awards__item-img" src="images/cup.svg" width="32" height="32"
+                                    alt="awards-cup">
+                            </div>
+                            <div class="awards__item-center">
+                                <p class="awards__item-title">Сертифікат PrimeLaser Systems</p>
+                                <p class="awards__item-name">Навички роботи на апараті: Elos Double Prime</p>
+                            </div>
+                            <div class="awards__item-bottom">
+                                <dialog class="awards__item-dialog">
+                                    <button class="awards__item-button--close" type="reset">✖</button>
+                                    <img class="awards__item-picture" src="images/awards/certificate.jpg"
+                                        alt="award-img">
+                                </dialog>
+                                <button class="awards__item-button">Переглянути <span
+                                        class="awards__item-arrow">➜</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feed" id="feed">
+            <div class="feed__container">
+                <h2 class="feed__title">Ознайомлення з процедурою</h2>
+                <p class="feed__text">
+                <ul class="feed__text-list">
+                    <p class="feed__list-title">До проведення лазерної епіляції існують певні протипоказання:</p>
+                    <li class="feed__list-item">• епілепсія;</li>
+                    <li class="feed__list-item">• цукровий діабет в стадії декомпенсації;</li>
+                    <li class="feed__list-item">• онкологічні захворювання в активній стадії;</li>
+                    <li class="feed__list-item">• захворювання серця та порушення згортання крові;</li>
+                    <li class="feed__list-item">• гострі вірусні та інфекційні захворювання;</li>
+                    <li class="feed__list-item">• герпес в активній стадії (бікіні, верхня губа);</li>
+                    <li class="feed__list-item">• варикоз 3-4 стадій в зоні проведення процедури;</li>
+                    <li class="feed__list-item">• алергічні реакції на сонце в анамнезі;</li>
+                    <li class="feed__list-item">• прийом антибіотиків фторхінолонового та тетрациклінового ряду менше
+                        ніж за 2 тижні до процедури;</li>
+                    <li class="feed__list-item">• прийом ретиноїдів;</li>
+                    <li class="feed__list-item">• хірургічні втручання та рубцювання в зоні проведення процедури менше
+                        ніж за 3 міс до епіляції;</li>
+                    <li class="feed__list-item">• свіжа засмага (5 днів до та 5 днів після процедури).</li>
+                </ul>
+                </p>
+
+                <p class="feed__text">
+                <ul class="feed__text-list--2">
+                    <p class="feed__list-title">Також важливо правильно підготуватися до лазерної епіляції:</p>
+                    <li class="feed__list-item">• за 2-3 тижні виключити всі методи видалення волосся окрім бритви,
+                        ножиць, тримера та крему для депіляції. Тобто не користуватися епілятором, пінцетом, не
+                        проводити воскову депіляцію та шугаринг;</li>
+                    <li class="feed__list-item">• за 1 тиждень не проводити хімічні пілінги;</li>
+                    <li class="feed__list-item">• за 5 днів відмовитися від автозасмаги, засмаги на сонці, в солярії, а
+                        виходячи на вулицю в сонячні дні, використовувати сонцезахисні засоби з SPF 50;</li>
+                    <li class="feed__list-item">• за 2 дні не використовувати спиртовмісні косметичні засоби;</li>
+                    <li class="feed__list-item">• за 1 день або в день процедури поголитися, так як епіляція проводиться
+                        на гладеньку шкіру. Якщо волосся відростає дуже швидко, тоді голити в день процедури;</li>
+                </ul>
+                </p>
+
+                <p class="feed__text">
+                <ul class="feed__text-list--2">
+                    <p class="feed__list-title">Рекомендації після проведення процедури:</p>
+                    <li class="feed__list-item">• в літній період у зв’язку з підвищеною чутливістю шкіри
+                        до ультрафіолету, яка може виникнути після лазерної процедури, необхідно уникати перебування під
+                        прямими сонячними променями протягом 4 тижнів та/або користуватися сонцезахисним кремом
+                        з фактором захисту 50;</li>
+                    <li class="feed__list-item">• необхідно утримуватися від проведення масажу, а також занять спортом,
+                        процедур зі скрабуванням і тертям шкіри, гарячого душу; варто утриматися від гарячих ванн,
+                        сауни, лазні протягом 3-х днів після епіляції. Рекомендується використовувати нейтральне мило.
+                        Для уникнення подразнення в зоні пахв — користуватися тільки сухим дезодорантом протягом доби
+                        після процедури епіляції зони пахв;</li>
+                    <li class="feed__list-item">• відростаюче після процедури волосся можна голити. Заборонено
+                        користуватися пінцетом, вищипувати волосся та видаляти іншими способами протягом всього курсу
+                        лазерної епіляції;</li>
+                    <li class="feed__list-item">• за умови проведення процедури в зоні обличчя наносити косметику
+                        рекомендується на наступну добу після процедури;</li>
+                    <li class="feed__list-item">• очищати шкіру в зоні оборобки слід делікатно, використовувати молочко
+                        та тонік. Заборонено тимчасово використовувати скраб;</li>
+                    <li class="feed__list-item">• косметичні чистки обличчя можна проводити не раніше, ніж через 2 тижні
+                        після цієї процедури;</li>
+                    <li class="feed__list-item">• дискомфортні відчуття в зоні лазерного впливу (печіння, почервоніння,
+                        набряк, синці, кірки) можуть зберігатися від 1 до 7 діб;</li>
+                    <li class="feed__list-item">• виростаюче після процедури волосся можна голити. Заборонено
+                        користуватися пінцетом, вищипувати волосся та видаляти іншими способами протягом всього курсу
+                        лазерної епіляції;</li>
+                    <li class="feed__list-item">• дискомфортні відчуття в області обробки (печіння, почервоніння,
+                        набряклість, синці, кірки) можуть зберігатися від 1 до 7 діб;</li>
+                    <li class="feed__list-item">• після процедури слід користуватися препаратом Пантенол-спрей або
+                        Цикапласт гель протягом усього періоду загоєння шкіри;</li>
+                    <li class="feed__list-item">• протягом 2 тижнів необхідно уникати теплових процедур (сауна, гарячі
+                        ванни і т. д.), а також завдавати шкірі будь-яких травмуючих дій;</li>
+                    <li class="feed__list-item">• у зв’язку з підвищеною чутливістю шкіри до ультрафіолету, яка може
+                        виникнути після лазерної процедури, необхідно уникати потрапляння сонячних променів на шкіру
+                        протягом 4 тижнів або користуватися сонцезахисним кремом з фактором захисту 50;</li>
+                    <li class="feed__list-item">• наступного дня після процедури можна використовувати косметичні засоби
+                        для догляду за шкірою та декоративну косметику;</li>
+                    <li class="feed__list-item">• повторна процедура зазвичай проводиться через 2 тижні. Кількість
+                        процедур залежить від дотримання рекомендацій оператора та від індивідуальних особливостей
+                        кожного клієнта;</li>
+                    <li class="feed__list-item">• очищати шкіру в зоні обробки слід делікатно, використовуючи молочко
+                        та тонік. Заборонено тимчасово використовувати скраб;</li>
+                    <li class="feed__list-item">• косметологічні чистки обличчя можуть проводитися не раніше ніж через 2
+                        тижні після цієї процедури.</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+
+        <section class="price" id="price">
+            <div class="container">
+                <h2 class="price__title">
+                    Ціни
+                </h2>
+                <div class="price__items">
+                    <details class="price__item">
+                        <summary class="price__item-head">
+                            Омоложення
+                        </summary>
+                        <div class="price__item-content">
+                            <ul class="price__item-description">
+                                <li class="price__item-text">Обличчя повністю<span class="price__item-cost">500
+                                        грн</span></li>
+                                <li class="price__item-text">Обличчя + шия<span class="price__item-cost">650 грн</span>
+                                </li>
+                                <li class="price__item-text">Шия та декольте<span class="price__item-cost">500
+                                        грн</span></li>
+                                <li class="price__item-text">Обличчя, шия, декольте<span class="price__item-cost">850
+                                        грн</span></li>
+                                <li class="price__item-text">Кисті рук<span class="price__item-cost">300 грн</span></li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details class="price__item">
+                        <summary class="price__item-head">
+                            Корекція епідермальної пігментації
+                        </summary>
+                        <div class="price__item-content">
+                            <ul class="price__item-description">
+                                <li class="price__item-text">Видалення одної пігментної плями<span
+                                        class="price__item-cost">140 грн</span>
+                                </li>
+                                <li class="price__item-text">Обличчя повністтю<span class="price__item-cost">650
+                                        грн</span>
+                                </li>
+                                <li class="price__item-text">Лоб<span class="price__item-cost">250 грн</span></li>
+                                <li class="price__item-text">Щоки<span class="price__item-cost">250 грн</span></li>
+                                <li class="price__item-text">Скули та підборіддя<span class="price__item-cost">350
+                                        грн</span></li>
+                            </ul>
+                        </div>
+                    </details>
+                    <details class="price__item">
+                        <summary class="price__item-head">
+                            Епіляція
+                        </summary>
+                        <div class="price__item-content">
+                            <ul class="price__item-description">
+                                <span class="price__item-title">Зони Епіляції Обличчя</span>
+                                <li class="price__item-text">Верхня губа<span class="price__item-cost">100 грн</span>
+                                </li>
+                                <li class="price__item-text">Виски<span class="price__item-cost">150 грн</span>
+                                </li>
+                                <li class="price__item-text">Підборіддя<span class="price__item-cost">150 грн</span>
+                                </li>
+                                <li class="price__item-text">Передня або задня поверхня шиї<span
+                                        class="price__item-cost">100 грн</span></li>
+                                <li class="price__item-text">Щоки<span class="price__item-cost">200 грн</span></li>
+                                <li class="price__item-text">Лоб<span class="price__item-cost">150 грн</span></li>
+                                <li class="price__item-text">Обличчя повністю<span class="price__item-cost">500
+                                        грн</span></li>
+                            </ul>
+                            <ul class="price__item-description">
+                                <span class="price__item-title">Зони Епіляції Рук</span>
+                                <li class="price__item-text">Пахви<span class="price__item-cost">300 грн</span></li>
+                                <li class="price__item-text">Передпліччя<span class="price__item-cost">300 грн</span>
+                                </li>
+                                <li class="price__item-text">Руки по всій довжині (обидві)<span
+                                        class="price__item-cost">450 грн</span></li>
+                                <li class="price__item-text">Кисті рук + пальці (обидві)<span
+                                        class="price__item-cost">350 грн</span></li>
+                            </ul>
+                            <ul class="price__item-description">
+                                <span class="price__item-title">Зони Епіляції Тулуба</span>
+                                <li class="price__item-text">Зона декольте<span class="price__item-cost">250 грн</span>
+                                </li>
+                                <li class="price__item-text">Ареол молочних залоз<span class="price__item-cost">150
+                                        грн</span>
+                                </li>
+                                <li class="price__item-text">Груди<span class="price__item-cost">500 грн</span></li>
+                                <li class="price__item-text">Біла лінія живота<span class="price__item-cost">150
+                                        грн</span></li>
+                                <li class="price__item-text">Спина<span class="price__item-cost">600 грн</span></li>
+                                <li class="price__item-text">Плечі<span class="price__item-cost">350 грн</span></li>
+                                <li class="price__item-text">Поперек<span class="price__item-cost">300 грн</span></li>
+                            </ul>
+                            <ul class="price__item-description">
+                                <span class="price__item-title">Зони Епіляції Ніг</span>
+                                <li class="price__item-text">Ноги (обидві, повністю)<span class="price__item-cost">1000
+                                        грн</span></li>
+                                <li class="price__item-text">Стегна<span class="price__item-cost">550 грн</span>
+                                </li>
+                                <li class="price__item-text">Гомілки (обидві)<span class="price__item-cost">550
+                                        грн</span></li>
+                            </ul>
+                            <ul class="price__item-description">
+                                <span class="price__item-title">Інтимні зони</span>
+                                <li class="price__item-text">Бікіні глибоке (статеві губи, лобок, міжсіднична складка +
+                                    по контуру трусиків)<span class="price__item-cost">600 грн</span></li>
+                                <li class="price__item-text">Бікіні не глибоке (по лінії трусиків)<span
+                                        class="price__item-cost">450 грн</span>
+                                </li>
+                                <li class="price__item-text">Бікіні екстра (статеві губи + міжсіднична складка)<span
+                                        class="price__item-cost">350 грн</span></li>
+                                <li class="price__item-text">Міжсіднична складка<span class="price__item-cost">200
+                                        грн</span></li>
+                                <li class="price__item-text">Лобок<span class="price__item-cost">350 грн</span></li>
+                                <li class="price__item-text">Сідниці<span class="price__item-cost">450 грн</span></li>
+                                <li class="price__item-text">Статеві губи<span class="price__item-cost">300 грн</span>
+                                </li>
+                            </ul>
+                            <ul class="price__item-description">
+                                <span class="price__item-title">Комплексний прайс</span>
+                                <li class="price__item-text">Гомілки + пахви<span class="price__item-cost">750
+                                        грн</span></li>
+                                <li class="price__item-text">Повне бікіні + пахви<span class="price__item-cost">800
+                                        грн</span>
+                                </li>
+                                <li class="price__item-text">Пахви + повне бікіні + гомілки<span
+                                        class="price__item-cost">1250 грн</span></li>
+                                <li class="price__item-text">Пахви + повне бікіні + ноги повністю<span
+                                        class="price__item-cost">1600 грн</span></li>
+                                <li class="price__item-text">Пахви + повне бікіні + ноги повністю + руки повністю<span
+                                        class="price__item-cost">2000 грн</span></li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="map" id="map">
+            <div class="map__wrapper">
+                <iframe class="map__content"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d464.622372396039!2d34.3612100484478!3d50.208281422545625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d7d8a88ae15df5%3A0xc77dbade5217c35!2sEvening%20stars!5e0!3m2!1sru!2sua!4v1726796109475!5m2!1sru!2sua"
+                    style="border:0;" title="google map" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="map__video">
+                    <video class="map__video" controls>
+                        <source src="images/IMG_6068.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="container">
+                <div class="footer__items">
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-menu">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#header">Головна</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#price">Ціна</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#services">Послуги</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#awards">Сертифікати</a></li>
+                            <!-- <li class="footer__nav-item"><a class="footer__nav-link" href="#feed">Робота</a></li> -->
+                        </ul>
+                    </nav>
+                    <div class="footer__time">
+                        <div class="footer__time-wrapper">
+                            <p class="footer__time-title">Графік роботи</p>
+                            <p class="footer__time-weekdays">Понеділок — П’ятниця: <span
+                                    class="footer__time-active footer__time-active--1">9.00 — 18.00</span></p>
+                            <p class="footer__time-weekends">Субота — Неділя: <span
+                                    class="footer__time-active footer__time-active--2">по домовленості</span></p>
+                        </div>
+                    </div>
+                    <div class="footer__socials">
+                        <ul class="footer__socials-items">
+                            <!-- <li class="footer__socials-mail"><a class="footer__socials-link"
+                                    href="mailto:koliadabeautifulstudio@gmail.com">koliadabeautifulstudio@gmail.com</a>
+                            </li> -->
+                            <li class="footer__socials-number"><a class="footer__socials-link"
+                                    href="tel:380685156092">+380 (68) 515 60 92</a></li>
+                            <li class="footer__socials-media">
+                                <a class="footer__socials-link" href="https://www.instagram.com/verbinskaiaolga/"
+                                    target="_blank">
+                                    <img src="images/instagram.svg" width="24" height="24" alt="instagram">
+                                </a>
+                                <a class="footer__socials-link" href="https://t.me/eloslaser" target="_blank">
+                                    <img src="images/telegram.svg" width="24" height="24" alt="telegram">
+                                </a>
+                                <a class="footer__socials-link" href="https://www.facebook.com/share/18BJLYdm22/"
+                                    target="_blank">
+                                    <img src="images/facebook.svg" width="24" height="24" alt="facebook">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="footer__logo">
+                    <img class="footer__logo-img" src="images/logo.webp" width="125" height="125"
+                        alt="">
+                </div> -->
+                <p class="footer__creator">
+                    <span class="footer__creator-text">Designed and made by</span>
+                    <a href="https://www.google.com/" class="footer__creator-link">
+                        <span class="footer__creator-name">
+                            Max Melenevsky
+                        </span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        gsap.from(".header__title", 2, {
+            delay: 0.7,
+            y: 20,
+            opacity: 0
+            // ease: Expo.easeInOut
+        })
+        gsap.from(".header__title-span", 2, {
+            delay: 0.7,
+            y: 20,
+            opacity: 0
+            // ease: Expo.easeInOut
+        })
+        if (window.innerWidth < 639.98) {
+            gsap.from(".header__socials-item", 2, {
+                delay: 0.4,
+                y: 40,
+                opacity: 0,
+                // stagger: 0.2
+                // ease: Expo.easeInOut
+            });
+        } else {
+            gsap.from(".header__socials-item", 2, {
+                delay: 0.4,
+                x: 40,
+                opacity: 0,
+                stagger: 0.2
+                // ease: Expo.easeInOut
+            })
+        }
+
+        const revealerNav = window.revealer({
+            revealElementSelector: ".nav-js",
+            options: {
+                anchorSelector: ".nav-btn-js",
+            },
+        });
+
+        const actionBtn = document.querySelector(".nav-btn-js");
+        const navItems = document.getElementsByClassName('header__menu-item');
+
+        actionBtn.addEventListener("click", () => {
+            if (!revealerNav.isRevealed()) {
+                revealerNav.reveal();
+                actionBtn.setAttribute("data-open", true);
+            } else {
+                revealerNav.hide();
+                actionBtn.setAttribute("data-open", false);
+            }
+        });
+
+        for (let i = 0; i < navItems.length; i++) {
+            navItems[i].addEventListener("click", () => {
+                if (!revealerNav.isRevealed()) {
+                    revealerNav.reveal();
+                    actionBtn.setAttribute("data-open", true);
+                } else {
+                    revealerNav.hide();
+                    actionBtn.setAttribute("data-open", false);
+                }
+            });
+        }
+    </script>
+    <script defer src="js/main.min.js"></script>
+</body>
+
+</html>

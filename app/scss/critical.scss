@@ -1,0 +1,156 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "global";
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--black);
+    background-image: url("images/gold.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    &__button {
+      z-index: 10;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: var(--white);
+      border: 0;
+      cursor: pointer;
+      position: fixed;
+      top: 40px;
+      right: 40px;
+      outline: none;
+      animation-duration: 300ms;
+      animation-timing-function: ease;
+    }
+  
+    &__button[data-open="true"] {
+      background-color: #000;
+      animation-name: scale;
+    }
+  
+    &__button[data-open="false"] {
+      transition: background-color 250ms linear;
+    }
+  
+    @keyframes scale {
+      from {
+        transform: scale(0);
+      }
+  
+      to {
+        transform: scale(1);
+      }
+    }
+  
+    &__nav {
+      background-color: var(--white);
+      position: fixed;
+      overflow: hidden;
+      z-index: 9;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      box-sizing: border-box;
+      visibility: hidden;
+      clip-path: circle(var(--radius) at calc(100% - 55px) 47px);
+    }
+    &__nav-title {
+      color: var(--black);
+      padding: 45px 0 0 25px;
+      font-size: 24px;
+    }
+    &__nav-wrapper {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      color: var(--black);
+      transition: all 0.3s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__nav-inner {
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      padding: 0 15px;
+    }
+    &__nav-link {
+      color: var(--black);
+    }
+    &__nav-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__nav-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__nav[data-active="true"] {
+      visibility: visible;
+    }
+  
+    &__menu {
+      padding: 0;
+      margin: 0;
+    }
+    &__menu-item {
+      color: var(--black);
+      font-size: 2.91666666667vw;
+      line-height: 3.125vw;
+    }
+    &__logo {
+      filter: invert(1);
+    }
+    &__name{
+      padding: 15px 0 15px 15px;
+    }
+    &__title {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      font-family: "MonumentExtended";
+      font-size: 40px;
+      letter-spacing: 3px;
+      transform: translate(-50%, -50%);
+    }
+    &__title-span {
+      position: absolute;
+      // top: 55px;
+      // left: 23%;
+      top: 80px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-text-stroke: 1px var(--white);
+      color: rgba(0, 0, 0, 0);
+    }
+    &__socials {
+      position: absolute;
+      right: -150px;
+      top: 50%;
+      transform: rotate(90deg);
+    }
+    &__socials-item {
+      display: inline-block;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.7);
+      font-family: "MonumentExtended";
+      font-size: 10px;
+      font-weight: 300;
+      letter-spacing: 2px;
+      margin-right: 40px;
+    }
+  }
+
+  @import "media";
