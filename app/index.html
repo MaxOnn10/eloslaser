@@ -492,8 +492,14 @@
 
         @media(max-width: 768px) {
             .banner {
-                font-size: 8px;
+                font-size: 12px;
                 padding: 0;
+                width: 65%;
+                padding: 0;
+                top: 150px;
+            }
+            .banner__text{
+                font-size: 7px;
             }
 
             .about__container {
@@ -619,10 +625,13 @@
 </head>
 
 <body>
-    <div class="banner">
-        Знижка 25% на першу комплексну терапію в честь відкриття!
-    </div>
+
     <header class="header" id="header">
+        <div class="banner">
+            <p class="banner__text">
+                По 24.10 знижка 50% на першу процедуру «Комплексний прайс»
+            </p>
+        </div>
         <button class="header__button nav-btn-js" aria-label="burger-button">
         </button>
 
@@ -658,8 +667,7 @@
                 </div>
             </div>
         </nav>
-        <!-- <img class="header__logo" src="images/logo.webp" width="100" height="100" alt="KoliadaStudio logo"> -->
-        <!-- <a href="/" class="header__name">ElosLaser</a> -->
+
         <h1 class="header__title">ElosLaser<span class="header__title-span">Studio</span></h1>
         <div class="header__socials">
             <ul class="header__socials-items">
@@ -716,8 +724,7 @@
             <div class="services__items services__items--1">
                 <div class="services__item services__item--1">
                     <div class="services__item-wrapper">
-                        <img class="services__item-img"
-                            src="images/chystka-oblychchya-2.webp"
+                        <img class="services__item-img" src="images/procedures-1.jpg"
                             loading="lazy" alt="">
                         <div class="services__img-overlay"></div>
                         <div class="services__item-copy">
@@ -730,7 +737,8 @@
                 </div>
                 <div class="services__item services__item--2">
                     <div class="services__item-wrapper">
-                        <img class="services__item-img" src="images/BIG--1518304559.jpg" style="object-fit: unset;"
+                        <img class="services__item-img"
+                            src="images/procedures-2.jpg"
                             loading="lazy" alt="">
                         <div class="services__img-overlay"></div>
                         <div class="services__item-copy">
@@ -743,7 +751,8 @@
                 </div>
                 <div class="services__item services__item--3">
                     <div class="services__item-wrapper">
-                        <img class="services__item-img" src="images/laser.jpg"
+                        <img class="services__item-img"
+                            src="images/procedures-3.jpg"
                             loading="lazy" alt="">
                         <div class="services__img-overlay"></div>
                         <div class="services__item-copy">
@@ -1065,9 +1074,6 @@
                     </div>
                     <div class="footer__socials">
                         <ul class="footer__socials-items">
-                            <!-- <li class="footer__socials-mail"><a class="footer__socials-link"
-                                    href="mailto:koliadabeautifulstudio@gmail.com">koliadabeautifulstudio@gmail.com</a>
-                            </li> -->
                             <li class="footer__socials-number"><a class="footer__socials-link"
                                     href="tel:380685156092">+380 (68) 515 60 92</a></li>
                             <li class="footer__socials-media">
@@ -1092,7 +1098,7 @@
                 </div> -->
                 <p class="footer__creator">
                     <span class="footer__creator-text">Designed and made by</span>
-                    <a href="https://www.google.com/" class="footer__creator-link">
+                    <a href="https://t.me/MAKS_Sky" class="footer__creator-link" target="_blank">
                         <span class="footer__creator-name">
                             Max Melenevsky
                         </span>
@@ -1103,6 +1109,12 @@
     </footer>
 
     <script>
+        gsap.from(".banner", 2, {
+            delay: 0.7,
+            y: 20,
+            opacity: 0
+            // ease: Expo.easeInOut
+        })
         gsap.from(".header__title", 2, {
             delay: 0.7,
             y: 20,
